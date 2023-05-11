@@ -47,10 +47,10 @@ const samplePageLinks = [
 ]
 
 const moreLinks = [
-  { text: "Visit me on LinkedIn", url: "https://gatsby.dev/discord" },
+  { text: "Visit me on LinkedIn", url: "https://www.linkedin.com/in/ryan-c-wong/" },
   {
     text: "Github",
-    url: "https://gatsbyjs.com/docs/",
+    url: "https://github.com/HamDanW",
   }
 ]
 
@@ -88,7 +88,7 @@ const IndexPage = () => (
         <li key={link.url} className={styles.listItem}>
           <a
             className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
+            href={`${link.url}`}
           >
             {link.text} ↗
           </a>
@@ -98,7 +98,7 @@ const IndexPage = () => (
     </ul>
     {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+        <a href={`${link.url}`}>{link.text}</a>
         {i !== moreLinks.length - 1 && <> · </>}
       </React.Fragment>
     ))}

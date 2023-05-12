@@ -7,12 +7,12 @@ import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
 const links = [
-  // {
-  //   text: "Projects",
-  //   url: "ProjectPage",
-  //   description:
-  //     "A great place to show my past projects",
-  // },
+  {
+    text: "Projects",
+    url: "page-2",
+    description:
+      "A great place to show my past projects",
+  },
   {
     text: "Examples",
     url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",

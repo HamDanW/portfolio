@@ -35,8 +35,8 @@ const links = [
 
 const samplePageLinks = [
   {
-    text: "Page 2",
-    url: "page-2",
+    text: "Projects",
+    url: "ProjectPage",
     badge: false,
     description:
       "A simple example of linking to another page within a Gatsby site",
@@ -98,7 +98,7 @@ const IndexPage = () => (
     </ul>
     {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
-        <a href={`${link.url}`}>{link.text}</a>
+        <a href={`${link.url}`} target="_blank">{link.text}</a>
         {i !== moreLinks.length - 1 && <> · </>}
       </React.Fragment>
     ))}

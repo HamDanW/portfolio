@@ -14,4 +14,4 @@ const AboutMe = () => (
 
 export const Head = () => <Seo title="About-Me" />
 
-export default SecondPage
+export default AboutMe

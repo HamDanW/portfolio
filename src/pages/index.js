@@ -15,7 +15,7 @@ const links = [
   },
   {
     text: "About Me",
-    url: "/about-me/",
+    url: "about-me",
     description:
       "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
   },

@@ -7,12 +7,12 @@ import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
 const links = [
-  {
-    text: "Projects",
-    url: "ProjectPage",
-    description:
-      "A great place to show my past projects",
-  },
+  // {
+  //   text: "Projects",
+  //   url: "ProjectPage",
+  //   description:
+  //     "A great place to show my past projects",
+  // },
   {
     text: "Examples",
     url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
@@ -36,7 +36,7 @@ const links = [
 const samplePageLinks = [
   {
     text: "Projects",
-    url: "ProjectPage",
+    url: "page-2",
     badge: false,
     description:
       "A simple example of linking to another page within a Gatsby site",

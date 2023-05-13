@@ -17,7 +17,7 @@ const links = [
     text: "About Me",
     url: "about-me",
     description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+      "A lil sumting about me",
   },
   {
     text: "Plugin Library",
@@ -53,7 +53,7 @@ const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
       <StaticImage
-        src="../images/example.png"
+        src="../images/selfie.jpeg"
         loading="eager"
         width={64}
         quality={95}

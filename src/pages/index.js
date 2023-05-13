@@ -55,10 +55,11 @@ const IndexPage = () => (
       <StaticImage
         src="../images/selfie.jpeg"
         loading="eager"
-        width={64}
+        width={100}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt=""
+        className="rounded-image"
         style={{ marginBottom: `var(--space-3)` }}
       />
       <h1>

@@ -52,16 +52,18 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/selfie.jpeg"
-        loading="eager"
-        width={100}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        className="rounded-image"
-        style={{ marginBottom: `var(--space-3)` }}
-      />
+      <div className={styles.imageContainer}>
+        <StaticImage
+          src="../images/selfie.jpeg"
+          loading="eager"
+          width={100}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          className={styles.circleImage}
+          style={{ marginBottom: `var(--space-3)` }}
+        />
+      </div>
       <h1>
         Welcome to <b> Ryan's Portfolio!</b>
       </h1>

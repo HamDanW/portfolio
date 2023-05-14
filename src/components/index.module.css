@@ -53,7 +53,12 @@
   line-height: var(--line-height-loose);
 }
 
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.rounded-image {
+.circleImage {
   border-radius: 50%;
 }

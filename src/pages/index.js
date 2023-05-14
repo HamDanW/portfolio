@@ -26,10 +26,10 @@ const links = [
       "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
   },
   {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
+    text: "My Playground",
+    url: "my-playground",
     description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+      "This is an area for me to play around with Node and React! Come Check it out!",
   },
 ]
 

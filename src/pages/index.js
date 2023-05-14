@@ -40,10 +40,11 @@ const samplePageLinks = [
 ]
 
 const moreLinks = [
-  { text: "Visit me on LinkedIn", url: "https://www.linkedin.com/in/ryan-c-wong/" },
+  { text: "Visit me on LinkedIn", url: "https://www.linkedin.com/in/ryan-c-wong/", class : "fab fa-linkedin" },
   {
     text: "Github",
     url: "https://github.com/HamDanW",
+    class : "fab fa-github"
   }
 ]
 

@@ -12,7 +12,7 @@ module.exports = {
     title: `Ryan's Portfolio`,
     description: `Come check out my website where I feature my projects while learning React`,
     author: `@RyanW`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://rwong.gatsbyjs.io`,
   },
   plugins: [
     `gatsby-plugin-image`,

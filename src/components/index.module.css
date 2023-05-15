@@ -62,3 +62,21 @@
 .circleImage {
   border-radius: 50%;
 }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.box {
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  flex-basis: calc(50% - 1rem);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  box-shadow

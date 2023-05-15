@@ -68,6 +68,6 @@ a {
 }
 
 .box:hover {
-  color: #444444;
-  box-shadow: 10px 5px 5px black;
+  background-color: #444444;
+  color: #D9D9D9;
 }

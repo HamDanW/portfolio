@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import "./header-styling.css"
 
-const Header = () => (
+const Header = ({ siteTitle }) => (
   <header>
     <nav>
       <ul>

@@ -70,9 +70,9 @@ const IndexPage = () => (
       </h1>
       <p className={styles.intro}>
         {/* <b>Example pages:</b>{" "} */}
-        <h2>
+        <h3>
           Hello, my name is Ryan Wong. I am a recent undergraduate from UC Davis majoring in computer science. This site is for me to learn and showcase my skills using React and Node. Have a good Day!
-        </h2>
+        </h3>
         {/* {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
             <Link to={link.url}>{link.text}</Link>
@@ -82,16 +82,15 @@ const IndexPage = () => (
       </p>
     </div>
     <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
+    {links.map(link => (
+        <Link
+          key={link.url}
+          to={link.url}
+          className={styles.box}
+        >
+          <h2 className={styles.boxTitle}>{link.text} ↗</h2>
+          <p className={styles.boxDescription}>{link.description}</p>
+        </Link>
       ))}
     </ul>
     {/* {moreLinks.map((link, i) => (

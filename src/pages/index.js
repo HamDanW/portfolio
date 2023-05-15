@@ -76,8 +76,6 @@ const IndexPage = () => (
             {i !== samplePageLinks.length - 1 && <> · </>}
           </React.Fragment>
         ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
       </p>
     </div>
     <ul className={styles.list}>

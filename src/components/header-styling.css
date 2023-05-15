@@ -9,6 +9,25 @@ header {
     z-index: 999;
 }
 
+nav ul {
+	display: flex;
+	justify-content: center;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	padding: 10px;
+	transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+	background-color: #eee;
+}
+
+
 main{
     margin-top: 120px;
 }

@@ -21,21 +21,6 @@ a {
   margin: 0;
 }
 
-.listItem::marker {
-  color: #e95800;
-}
-
-.listItem:nth-child(2)::marker {
-  color: #159bf3;
-}
-
-.listItem:nth-child(3)::marker {
-  color: #8eb814;
-}
-
-.listItem:nth-child(4)::marker {
-  color: #663399;
-}
 
 .listItemLink {
   color: var(--color-primary);
@@ -75,7 +60,7 @@ a {
 
 .box {
   padding: 2rem;
-  background-color: #444444;
+  
   border-radius: 0.5rem;
   flex-basis: calc(50% - 1rem);
   text-align: center;
@@ -83,5 +68,6 @@ a {
 }
 
 .box:hover {
+  color: #444444;
   box-shadow: 10px 5px 5px black;
 }

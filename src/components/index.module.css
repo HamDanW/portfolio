@@ -75,7 +75,7 @@ a {
 
 .box {
   padding: 2rem;
-  border: 1px solid #ccc;
+  background-color: #444444;
   border-radius: 0.5rem;
   flex-basis: calc(50% - 1rem);
   text-align: center;

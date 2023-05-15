@@ -33,11 +33,6 @@ const links = [
   },
 ]
 
-const samplePageLinks = [
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
 
 // const moreLinks = [
 //   { text: "Visit me on LinkedIn", url: "https://www.linkedin.com/in/ryan-c-wong/", class : "fab fa-linkedin" },

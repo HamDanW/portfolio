@@ -2,7 +2,13 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+//import Seo from "../components/seo"
+
+const samplePageLinks = [
+  { text: "TypeScript", url: "using-typescript" },
+  { text: "Server Side Rendering", url: "using-ssr" },
+  { text: "Deferred Static Generation", url: "using-dsg" },
+]
 
 const MyPlayground = () => (
   <Layout>

@@ -39,14 +39,14 @@ const samplePageLinks = [
   { text: "Deferred Static Generation", url: "using-dsg" },
 ]
 
-const moreLinks = [
-  { text: "Visit me on LinkedIn", url: "https://www.linkedin.com/in/ryan-c-wong/", class : "fab fa-linkedin" },
-  {
-    text: "Github",
-    url: "https://github.com/HamDanW",
-    class : "fab fa-github"
-  }
-]
+// const moreLinks = [
+//   { text: "Visit me on LinkedIn", url: "https://www.linkedin.com/in/ryan-c-wong/", class : "fab fa-linkedin" },
+//   {
+//     text: "Github",
+//     url: "https://github.com/HamDanW",
+//     class : "fab fa-github"
+//   }
+// ]
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
@@ -70,12 +70,15 @@ const IndexPage = () => (
       </h1>
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
+        <h2>
+          
+        </h2>
+        {/* {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
             <Link to={link.url}>{link.text}</Link>
             {i !== samplePageLinks.length - 1 && <> · </>}
           </React.Fragment>
-        ))}
+        ))} */}
       </p>
     </div>
     <ul className={styles.list}>
@@ -91,12 +94,12 @@ const IndexPage = () => (
         </li>
       ))}
     </ul>
-    {moreLinks.map((link, i) => (
+    {/* {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
         <a href={`${link.url}`} target = "_blank">{link.text}</a>
         {i !== moreLinks.length - 1 && <> · </>}
       </React.Fragment>
-    ))}
+    ))} */}
   </Layout>
 )
 

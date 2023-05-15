@@ -9,7 +9,7 @@ import * as styles from "../components/index.module.css"
 const links = [
   {
     text: "Projects",
-    url: "page-2",
+    url: "projects",
     description:
       "A great place to show my past projects",
   },

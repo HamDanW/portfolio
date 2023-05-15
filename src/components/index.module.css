@@ -61,6 +61,7 @@ a {
 .box {
   padding: 2rem;
   border-radius: 0.5rem;
+  background-color: #6B6B6B;
   flex-basis: calc(50% - 1rem);
   text-align: center;
   transition: all 0.3s ease;

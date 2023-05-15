@@ -60,7 +60,6 @@ a {
 
 .box {
   padding: 2rem;
-  background-color: #444444;
   border-radius: 0.5rem;
   flex-basis: calc(50% - 1rem);
   text-align: center;
@@ -68,6 +67,12 @@ a {
 }
 
 .box:hover {
-  background-color: #444444;
-  color: #D9D9D9;
+  background-color: #6B6B6B;
+  color: #333333;
 }
+
+/*
+333333
+6B6B6B
+D9D9D9
+*/

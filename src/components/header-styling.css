@@ -10,24 +10,26 @@ header {
 }
 
 nav ul {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav li {
-	margin: 0 10px;
+    margin: 0 10px;
 }
 
 nav a {
-	padding: 10px;
-	transition: background-color 0.3s ease;
+    padding: 10px;
+    background-color: #333333;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-	background-color: #eee;
+    background-color: #333333;
+    color: #D9D9D9;
 }
 
 
-main{
+main {
     margin-top: 120px;
 }

@@ -88,7 +88,7 @@ const IndexPage = () => (
           to={link.url}
           className={styles.box}
         >
-          <h2 className={styles.boxTitle}>{link.text} ↗</h2>
+          <h2 className={styles.boxTitle}>{link.text}</h2>
           <p className={styles.boxDescription}>{link.description}</p>
         </Link>
       ))}

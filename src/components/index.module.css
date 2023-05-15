@@ -13,6 +13,10 @@
   margin-top: var(--size-gap);
 }
 
+.main-content {
+  margin-top: 100px;
+}
+
 a {
   text-decoration: none;
 }

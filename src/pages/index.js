@@ -66,12 +66,12 @@ const IndexPage = () => (
         />
       </div>
       <h1>
-        Welcome to <b> Ryan's Portfolio!</b>
+        Welcome to <b> My Website!</b>
       </h1>
       <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
+        {/* <b>Example pages:</b>{" "} */}
         <h2>
-          
+          Hello, my name is Ryan Wong. I am a recent undergraduate from UC Davis majoring in computer science. This site is for me to learn and showcase my skills using React and Node. Have a good Day!
         </h2>
         {/* {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>

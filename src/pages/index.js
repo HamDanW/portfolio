@@ -66,7 +66,7 @@ const IndexPage = () => (
         />
       </div>
       <h1>
-        Welcome to <b> My Website!</b>
+        Welcome to  My Website!
       </h1>
       <p className={styles.intro}>
         {/* <b>Example pages:</b>{" "} */}

@@ -13,6 +13,10 @@
   margin-top: var(--size-gap);
 }
 
+a {
+  text-decoration: none;
+}
+
 .listItem {
   margin: 0;
 }

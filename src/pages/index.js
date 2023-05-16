@@ -20,7 +20,7 @@ const links = [
       "A lil sumting about me",
   },
   {
-    text: "Plugin Library",
+    text: "Contact Me",
     url: "https://www.gatsbyjs.com/plugins",
     description:
       "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
@@ -29,7 +29,7 @@ const links = [
     text: "My Playground",
     url: "my-playground",
     description:
-      "This is an area for me to play around with Node and React! Come Check it out!",
+      "This is an area for me to play around with Node and React! Come check it out!",
   },
 ]
 
@@ -65,7 +65,7 @@ const IndexPage = () => (
       </h1>
       <p className={styles.intro}>
         {/* <b>Example pages:</b>{" "} */}
-          Hello, my name is Ryan Wong. I am a recent undergraduate from UC Davis majoring in computer science. This site is for me to learn and showcase my skills using React and Node. Have a good Day!
+          Hello, my name is Ryan Wong. I am a recent undergraduate from UC Davis with a BS in computer science. This site is for me to learn and showcase my skills using React and Node. Have a good day!
         {/* {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
             <Link to={link.url}>{link.text}</Link>

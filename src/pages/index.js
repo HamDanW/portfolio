@@ -89,7 +89,7 @@ const IndexPage = () => (
           <p className={styles.boxDescription}>{link.description}</p>
         </Link>
       ))}
-      <li><a class={styles.box} href={Pdf} target="_blank" rel="noopener noreferrer">Resume</a></li>
+      <a class={styles.box} href={Pdf} target="_blank" rel="noopener noreferrer">Resume</a>
     </ul>
     {/* {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>

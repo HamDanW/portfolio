@@ -55,7 +55,16 @@ const Projects = () => (
           to={link.url}
           className={styles.box}
         >
-          <img src={link.imageSrc}></img>
+          <StaticImage
+          src={link.imageSrc}
+          loading="eager"
+          width={100}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          className={styles.circleImage}
+          style={{ marginBottom: `var(--space-3)` }}
+        />
           <h2 className={styles.boxTitle}>{link.title}</h2>
         </Link>
       ))}

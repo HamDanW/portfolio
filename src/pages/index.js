@@ -28,14 +28,6 @@ const links = [
   },
 ]
 
-const Docs = [
-  {
-    text: "Resume",
-    url: "Resume",
-    description:
-      "My Resume",
-  }
-]
 
 
 // const moreLinks = [
@@ -89,7 +81,9 @@ const IndexPage = () => (
           <p className={styles.boxDescription}>{link.description}</p>
         </Link>
       ))}
-      <a class={styles.box} href={Pdf} target="_blank" rel="noopener noreferrer">Resume</a>
+      <a class={styles.box} href={Pdf} target="_blank" rel="noopener noreferrer">
+        <h2 class={styles.boxTitle}>Resume</h2>
+      </a>
     </ul>
     {/* {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>

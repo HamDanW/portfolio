@@ -10,43 +10,37 @@ const projects = [
     id: "project-1",
     imageSrc: "../images/shell.png",
     url:"./project-pages/simple-shell",
-    title: "Simple Shell",
-    description: "Description of Simple Shell..."
+    title: "Simple Shell"
   },
   {
     id: "project-2",
     imageSrc: "../images/blockchain.png",
     url:"./project-pages/simple-shell",
-    title: "Block Chain",
-    description: "Description of Block Chain..."
+    title: "Block Chain"
   },
   {
     id: "project-3",
     imageSrc: "../images/multithread.png",
     url:"./project-pages/simple-shell",
-    title: "Multi-Threading",
-    description: "Description of Multi-Threading..."
+    title: "Multi-Threading"
   },
   {
     id: "project-4",
     imageSrc: "../images/multithread.png",
     url:"./project-pages/simple-shell",
-    title: "Project 4",
-    description: "Description of Project 4..."
+    title: "Project 4"
   },
   {
     id: "project-5",
     imageSrc: "../images/multithread.png",
     url:"./project-pages/simple-shell",
-    title: "Project 5",
-    description: "Description of Project 5..."
+    title: "Project 5"
   },
   {
     id: "project-6",
     imageSrc: "../images/multithread.png",
     url:"./project-pages/simple-shell",
-    title: "Project 6",
-    description: "Description of Project 6..."
+    title: "Project 6"
   }
 ];
 
@@ -60,8 +54,8 @@ const Projects = () => (
           to={link.url}
           className={styles.box}
         >
-          <img src="img/shell.png"></img>
-          <h2 className={styles.boxTitle}>{link.text}</h2>
+          <img src={link.imageSrc}></img>
+          <h2 className={styles.boxTitle}>{link.title}</h2>
         </Link>
       ))}
     </ul>

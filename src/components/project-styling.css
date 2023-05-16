@@ -1,8 +1,37 @@
+.list {
+    display: grid;
+    margin: 0;
+    /* https://css-tricks.com/responsive-layouts-fewer-media-queries/ */
+    --w: 280px;
+    --n: 2;
+    gap: var(--size-gap);
+    grid-template-columns: repeat(auto-fit,
+            minmax(max(var(--w), 100%/ (var(--n) + 1) + 0.1%), 1fr));
+    margin-bottom: var(--size-gap);
+    margin-top: var(--size-gap);
+}
+
+.listItem {
+    margin: 0;
+}
+
+
+.listItemLink {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.listItemDescription {
+    color: var(--color-text);
+    margin-bottom: 0;
+    margin-top: var(--space-1);
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-  }
+}
 
 .box {
     padding: 2rem;
@@ -11,9 +40,9 @@
     flex-basis: calc(50% - 1rem);
     text-align: center;
     transition: all 0.3s ease;
-  }
-  
-  .box:hover {
+}
+
+.box:hover {
     background-color: #6B6B6B;
     color: #333333;
-  }
+}

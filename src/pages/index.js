@@ -28,17 +28,6 @@ const links = [
   },
 ]
 
-
-
-// const moreLinks = [
-//   { text: "Visit me on LinkedIn", url: "https://www.linkedin.com/in/ryan-c-wong/", class : "fab fa-linkedin" },
-//   {
-//     text: "Github",
-//     url: "https://github.com/HamDanW",
-//     class : "fab fa-github"
-//   }
-// ]
-
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (

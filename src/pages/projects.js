@@ -60,12 +60,6 @@ const Projects = () => (
         </Link>
       ))}
     </ul>
-    {/* {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}`} target = "_blank">{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))} */}
   </Layout>
 )
 

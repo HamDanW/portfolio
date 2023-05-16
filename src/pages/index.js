@@ -20,17 +20,20 @@ const links = [
       "A lil sumting about me",
   },
   {
-    text: "Resume",
-    url: "Resume",
-    description:
-      "My Resume",
-  },
-  {
     text: "My Playground",
     url: "my-playground",
     description:
       "This is an area for me to play around with Node and React! Come check it out!",
   },
+]
+
+const Docs = [
+  {
+    text: "Resume",
+    url: "Resume",
+    description:
+      "My Resume",
+  }
 ]
 
 

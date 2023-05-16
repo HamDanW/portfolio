@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import Pdf from './Resume.pdf'
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -88,6 +89,7 @@ const IndexPage = () => (
           <p className={styles.boxDescription}>{link.description}</p>
         </Link>
       ))}
+      <li><a class={styles.box} href={Pdf} target="_blank" rel="noopener noreferrer">Resume</a></li>
     </ul>
     {/* {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>

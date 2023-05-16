@@ -20,10 +20,10 @@ const links = [
       "A lil sumting about me",
   },
   {
-    text: "Contact Me",
-    url: "https://www.gatsbyjs.com/plugins",
+    text: "Resume",
+    url: "Resume",
     description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+      "My Resume",
   },
   {
     text: "My Playground",

@@ -5,11 +5,12 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/project.module.css"
+import sshellLogo from '../images/shell.png';
 
 const projects = [
   {
     id: "project-1",
-    imageSrc: "../images/shell.png",
+    imageSrc: sshellLogo,
     url:"./project-pages/simple-shell",
     title: "Simple Shell"
   },
@@ -55,16 +56,7 @@ const Projects = () => (
           to={link.url}
           className={styles.box}
         >
-          <StaticImage
-          src={link.imageSrc}
-          loading="eager"
-          width={100}
-          quality={95}
-          formats={["auto", "webp", "avif"]}
-          alt=""
-          className={styles.circleImage}
-          style={{ marginBottom: `var(--space-3)` }}
-        />
+          <img src = {link.imageSrc}/>
           <h2 className={styles.boxTitle}>{link.title}</h2>
         </Link>
       ))}

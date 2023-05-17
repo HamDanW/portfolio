@@ -18,13 +18,13 @@ nav li {
     margin: 0 10px;
 }
 
-nav Link {
+nav .links {
     padding: 10px;
     background-color: #333333;
     transition: background-color 0.3s ease;
 }
 
-nav Link:hover {
+nav .links:hover {
     background-color: #333333;
     color: #D9D9D9;
 }

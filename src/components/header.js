@@ -4,14 +4,34 @@ import Pdf from '../pages/Resume.pdf'
 
 import "./header-styling.css"
 
+const links=[
+  {
+    text: "Projects",
+    url: "projects"
+  },
+  {
+    text: "About Me",
+    url: "about-me"
+  },
+  {
+    text: "My Playground",
+    url: "my-playground"
+  }
+]
+
 const Header = ({ siteTitle }) => (
   <header>
     <nav>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="../pages/projects">Projects</Link></li>
-        <li><Link to="../pages/my-playground">My Playground</Link></li>
-        <li><Link to="../pages/about-me">About Me</Link></li>
+        {links.map(link =>(
+          <Link
+            key = {link.url}
+            to={link.url}
+            className="links"
+          >
+            {link.text}
+          </Link>
+        ))}
         <li><a href={Pdf} target="_blank" rel="noopener noreferrer">Resume</a></li>
       </ul>
     </nav>

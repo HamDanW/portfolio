@@ -6,16 +6,20 @@ import "./header-styling.css"
 
 const links=[
   {
+    text: "Home",
+    url: "/"
+  },
+  {
     text: "Projects",
-    url: "projects"
+    url: "../pages/projects"
   },
   {
     text: "About Me",
-    url: "about-me"
+    url: "../pages/about-me"
   },
   {
     text: "My Playground",
-    url: "my-playground"
+    url: "../pages/my-playground"
   }
 ]
 
@@ -24,13 +28,15 @@ const Header = ({ siteTitle }) => (
     <nav>
       <ul>
         {links.map(link =>(
-          <Link
-            key = {link.url}
-            to={link.url}
-            className="links"
-          >
-            {link.text}
-          </Link>
+          <li>
+            <Link
+              key = {link.url}
+              to={link.url}
+              className="links"
+            >
+              {link.text}
+            </Link>
+          </li>
         ))}
         <li><a href={Pdf} target="_blank" rel="noopener noreferrer">Resume</a></li>
       </ul>

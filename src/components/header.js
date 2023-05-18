@@ -11,15 +11,15 @@ const links=[
   },
   {
     text: "Projects",
-    url: "../pages/projects"
+    url: "/projects"
   },
   {
     text: "About Me",
-    url: "../pages/about-me"
+    url: "/about-me"
   },
   {
     text: "My Playground",
-    url: "../pages/my-playground"
+    url: "/my-playground"
   }
 ]
 

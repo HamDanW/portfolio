@@ -6,9 +6,11 @@ import Seo from "../components/seo"
 
 const AboutMe = () => (
   <Layout>
-    <h1>Hi I am Ryan</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <h1>A Little About Me</h1>
+    
+    <p>
+      Hello, I am Ryan and I am a recent graduate from University of California, Davis with a bachelor's degree in computer science.
+    </p>
   </Layout>
 )
 

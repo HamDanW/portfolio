@@ -12,9 +12,15 @@ const samplePageLinks = [
 
 const MyPlayground = () => (
   <Layout>
-    <h1>Hi I am Ryan</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <h1>Welcome to my playground</h1>
+    <p>This is where I learn more about React</p>
+    <b>Example pages:</b>{" "}
+    {samplePageLinks.map((link, i) => (
+      <React.Fragment key={link.url}>
+        <Link to={link.url}>{link.text}</Link>
+        {i !== samplePageLinks.length - 1 && <> · </>}
+      </React.Fragment>
+    ))}
   </Layout>
 )
 

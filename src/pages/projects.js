@@ -11,7 +11,7 @@ const projects = [
   {
     id: "project-1",
     imageSrc: sshellLogo,
-    url:"./project-pages/simple-shell",
+    url:"simple-shell",
     title: "Simple Shell"
   },
   {

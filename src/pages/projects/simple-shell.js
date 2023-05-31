@@ -6,8 +6,9 @@ import Seo from "../../components/seo"
 
 const SimpleShell = () => (
   <Layout>
-    <h1>Hi I am Ryan</h1>
-    <p>Welcome to page 2</p>
+    <h1>Simple Shell</h1>
+    <h2>Introduction </h2>
+    <hr></hr>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )

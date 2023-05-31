@@ -17,13 +17,13 @@ const projects = [
   {
     id: "project-2",
     imageSrc: "../images/blockchain.png",
-    url:"./project-pages/simple-shell",
+    url:"blockchain",
     title: "Block Chain"
   },
   {
-    id: "project-3",
+    id: "Multithreading Library",
     imageSrc: "../images/multithread.png",
-    url:"./project-pages/simple-shell",
+    url:"multithreading",
     title: "Multi-Threading"
   },
   {

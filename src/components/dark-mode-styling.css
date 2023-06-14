@@ -279,10 +279,10 @@ body {
   @keyframes change-background {
     0%,59%,98%,100% {
       background: #FFF;
-      color: #000;
+      color: #000080;
     }
     61%,97% {
-      background: #000;
+      background: #000080;
       color:#FFF;
     }
   }

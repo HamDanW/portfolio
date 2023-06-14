@@ -27,16 +27,16 @@ const projects = [
     title: "Multi-Threading"
   },
   {
-    id: "project-4",
+    id: "Match Cards",
     imageSrc: "../images/multithread.png",
-    url:"./project-pages/simple-shell",
-    title: "Project 4"
+    url:"Badminton-Match-Cards-Generator",
+    title: "Badminton Match Cards Generator"
   },
-  {
-    id: "project-5",
+  { 
+    id: "fat system",
     imageSrc: "../images/multithread.png",
-    url:"./project-pages/simple-shell",
-    title: "Project 5"
+    url:"fat-system",
+    title: "FAT System"
   },
   {
     id: "project-6",

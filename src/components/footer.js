@@ -43,7 +43,7 @@ const Footer = () => {
                     <div className="candle__smoke-two"></div>
                 </div>
                 <div className="floor"></div>
-                <button onClick={toggleMode}>
+                <button className='Dark-Mode-Button' onClick={toggleMode}>
                     {isLightMode ? 'Dark Mode' : 'Light Mode'}
                 </button>
             </div>

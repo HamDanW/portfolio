@@ -4,9 +4,9 @@ body {
   }
   
   .wrapper {
-    position: absolute;
+    position: fixed;
     left: 50%;
-    top: 70%;
+    bottom: 0;
     transform: scale(1, 1) translate(-50%, -50%);
   }
   

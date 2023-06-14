@@ -275,9 +275,11 @@ body {
   @keyframes change-background {
     0%,59%,98%,100% {
       background: #FFF;
+      color: #000;
     }
     61%,97% {
       background: #000;
+      color:#FFF;
     }
   }
   @keyframes move-left {

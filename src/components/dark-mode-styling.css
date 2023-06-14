@@ -5,7 +5,7 @@ body {
   
   .wrapper {
     position: fixed;
-    left: 50%;
+    left: 20%;
     bottom: 0;
     transform: scale(1, 1) translate(-50%, -50%);
   }

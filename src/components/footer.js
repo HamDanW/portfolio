@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useDarkMode } from "gatsby-plugin-dark-mode";
 import { Link } from "gatsby"
 import "./footer-styling.css"
 //import "./dark-mode-styling.css"
@@ -6,25 +7,14 @@ import "./dark-mode-test.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
-    const [isLightMode, setIsLightMode] = useState(true);
+    const darkMode = useDarkMode();
   
     const toggleMode = () => {
-      setIsLightMode(!isLightMode);
+      DarkMode.toggle();
     };
-
-    useEffect(() => {
-        const root = document.querySelector('#root');
-        if (isLightMode) {
-          root.classList.remove('dark');
-          root.classList.add('light');
-        } else {
-          root.classList.remove('light');
-          root.classList.add('dark');
-        }
-      }, [isLightMode]);
   
     return (
-      <footer className={isLightMode ? 'light' : 'dark'}>
+      <footer className={darkMode.value ? "dark" : "light"}>
         <div className='wrapper'>
           <div className="candles">
             <div className="light__wave"></div>

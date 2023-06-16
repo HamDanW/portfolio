@@ -1,4 +1,4 @@
-footer.light, body{
+footer.light, main{
   background-color: #FFF;
   color:#000;
   -webkit-transition: background-color 1000ms linear;
@@ -6,7 +6,7 @@ footer.light, body{
   transition: background-color 1000ms linear;
 }
 
-footer.dark, body{
+footer.dark, main{
   background-color: #1e1e1e;
   color: #FFF;
   -webkit-transition: background-color 1000ms linear;

@@ -1,8 +1,8 @@
-footer.light {
+.light {
   background-color: #FFF;
 }
 
-footer.dark {
+.dark {
   background-color: #1e1e1e;
   color: #FFF;
 }

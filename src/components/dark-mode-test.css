@@ -1,10 +1,17 @@
-footer.light body{
+footer.light, body{
   background-color: #FFF;
+  color:#000;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
-footer.dark body{
+footer.dark, body{
   background-color: #1e1e1e;
   color: #FFF;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 .wrapper {

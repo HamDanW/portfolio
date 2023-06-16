@@ -7,6 +7,7 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -35,7 +36,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
 }

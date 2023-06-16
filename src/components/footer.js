@@ -11,6 +11,17 @@ const Footer = () => {
     const toggleMode = () => {
       setIsLightMode(!isLightMode);
     };
+
+    useEffect(() => {
+        const root = document.querySelector('#root');
+        if (isLightMode) {
+          root.classList.remove('dark');
+          root.classList.add('light');
+        } else {
+          root.classList.remove('light');
+          root.classList.add('dark');
+        }
+      }, [isLightMode]);
   
     return (
       <footer className={isLightMode ? 'light' : 'dark'}>

@@ -5,14 +5,15 @@ import "./dark-mode-styling.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
-    const [isLightMode, setIsLightMode] = useState(true);
+    const body = document.querySelector('body');
+    const darkModeButton = document.querySelector('.Dark-Mode-Button');
 
-    const toggleMode = () => {
-        setIsLightMode(!isLightMode);
-    };
+    darkModeButton.addEventListener('click', () => {
+        body.classList.toggle('dark');
+    });
 
     return (
-        <footer className={`${isLightMode ? 'light-mode' : 'dark-mode'}`}>
+        <footer className='light'>
             <div className='wrapper'>
                 <div className="candles">
                     <div className="light__wave"></div>

@@ -1,17 +1,11 @@
 import React, { useState } from 'react';
-import { useDarkMode } from "gatsby-plugin-dark-mode";
 import { Link } from "gatsby"
 import "./footer-styling.css"
-//import "./dark-mode-styling.css"
-import "./dark-mode-test.css"
+import "./dark-mode-styling.css"
+//import "./dark-mode-test.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
-    const darkMode = useDarkMode();
-  
-    const toggleMode = () => {
-      DarkMode.toggle();
-    };
   
     return (
       <footer className={darkMode.value ? "dark" : "light"}>

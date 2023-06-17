@@ -1,9 +1,9 @@
 footer.light{
-  animation: change-background 3s;
+  animation: change-black 3s;
 }
 
 footer.dark{
-  animation: change-background 3s;
+  animation: change-white 3s;
 }
 
 .wrapper {
@@ -279,10 +279,10 @@ footer.dark{
     left: 30%;
   }
 }
-@keyframes change-background {
-  0%,59%,98%,100% {
-    background: #FFF;
-    color: #000;
+@keyframes change-white {
+  0%,50% {
+    background: #1e1e1e;
+    color: #FFF;
     /*
     
   -webkit-transition: background-color 1000ms linear;
@@ -290,7 +290,18 @@ footer.dark{
   transition: background-color 1000ms linear;
     */
   }
-  61%,97% {
+  51%,100% {
+    background: #FFF;
+    color:#000;
+  }
+}
+
+@keyframes change-black {
+  0%,50% {
+    background: #FFF;
+    color: #000;
+  }
+  51%,100% {
     background: #1e1e1e;
     color:#FFF;
   }

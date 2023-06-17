@@ -8,7 +8,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const Footer = () => {
   
     return (
-      <footer className={darkMode.value ? "dark" : "light"}>
+      <footer>
         <div className='wrapper'>
           <div className="candles">
             <div className="light__wave"></div>

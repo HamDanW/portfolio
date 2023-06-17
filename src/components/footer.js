@@ -6,14 +6,14 @@ import "./dark-mode-test.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
-  const [isLightMode, setIsLightMode] = useState(true);
+  // const [isLightMode, setIsLightMode] = useState(true);
 
-  const toggleMode = () => {
-    setIsLightMode(!isLightMode);
-  };
+  // const toggleMode = () => {
+  //   setIsLightMode(!isLightMode);
+  // };
 
   return (
-    <footer className={isLightMode ? 'light' : 'dark'}>
+    <footer /*className={isLightMode ? 'light' : 'dark'}*/>
       <div className='wrapper'>
         <div className="candles">
           <div className="light__wave"></div>
@@ -44,9 +44,9 @@ const Footer = () => {
           <div className="candle__smoke-two"></div>
         </div>
         <div className="floor"></div>
-        <button className='Dark-Mode-Button' onClick={toggleMode}>
+        {/* <button className='Dark-Mode-Button' onClick={toggleMode}>
           {isLightMode ? 'Dark Mode' : 'Light Mode'}
-        </button>
+        </button> */}
       </div>
       <div className="social-icons">
         <a href="http://Linkedin.com/in/ryan-c-wong" target="_blank" rel="noopener noreferrer" className="icon linkedin">

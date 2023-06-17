@@ -1,14 +1,12 @@
 footer.light{
-  background-color: #FFF;
-  color:#000;
+  animation: change-background;
   -webkit-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
 }
 
 footer.dark{
-  background-color: #1e1e1e;
-  color: #FFF;
+  animation: change-background;
   -webkit-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;

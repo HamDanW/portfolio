@@ -35,6 +35,10 @@ body {
     transform: translate(-50%, -100%);
     z-index: 1;
   }
+
+  .candles:not(.playing) {
+    animation-play-state: paused;
+  }
   
   .candle1 {
     position: absolute;

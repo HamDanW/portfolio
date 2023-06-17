@@ -6,15 +6,15 @@ import "./dark-mode-styling.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
-  const [animationActive, setAnimationActive] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
 
   const toggleAnimation = () => {
-    setAnimationActive(!animationActive);
+    setIsPlaying(!isPlaying);
   };
-
+  
   return (
     <div className="wrapper">
-      <div className={`candles ${animationActive ? 'animate' : ''}`}>
+      <div className={`candles`}>
         <div className="light__wave"></div>
         <div className="candle1">
           <div className="candle1__body">
@@ -43,9 +43,8 @@ const Footer = () => {
         <div className="candle__smoke-two"></div>
       </div>
       <div className="floor"></div>
-
       <button onClick={toggleAnimation}>
-        {animationActive ? 'Stop Animation' : 'Start Animation'}
+        {isPlaying ? 'Pause Animation' : 'Play Animation'}
       </button>
     </div>
   );

@@ -14,7 +14,7 @@ const Footer = () => {
   
   return (
     <div className="wrapper">
-      <div className={`candles`}>
+      <div className={`candles ${isPlaying ? 'playing' : ''}`}>
         <div className="light__wave"></div>
         <div className="candle1">
           <div className="candle1__body">

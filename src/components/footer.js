@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from "gatsby"
 import "./footer-styling.css"
-//import "./dark-mode-styling.css"
-import "./dark-mode-test.css"
+import "./dark-mode-styling.css"
+//import "./dark-mode-test.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {

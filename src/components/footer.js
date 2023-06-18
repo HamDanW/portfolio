@@ -7,10 +7,16 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
 
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  const toggleAnimation = () => {
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <footer>
       <div className='wrapper'>
-        <div className="candles">
+        <div className={`candles ${isPlaying ? 'playing' : ''}`}>
           <div className="light__wave"></div>
           <div className="candle1">
             <div className="candle1__body">
@@ -39,6 +45,9 @@ const Footer = () => {
           <div className="candle__smoke-two"></div>
         </div>
         <div className="floor"></div>
+        <button onClick={toggleAnimation}>
+          {isPlaying ? 'Pause Animation' : 'Play Animation'}
+        </button>
       </div>
       <div className="social-icons">
         <a href="http://Linkedin.com/in/ryan-c-wong" target="_blank" rel="noopener noreferrer" className="icon linkedin">

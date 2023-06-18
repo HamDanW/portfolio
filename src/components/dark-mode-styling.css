@@ -14,6 +14,13 @@ body {
   left: 20%;
 }
 
+.paused{
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused; 
+  animation-play-state:paused;
+}
+
 .floor {
   position: absolute;
   left: 50%;

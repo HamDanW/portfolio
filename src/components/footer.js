@@ -9,8 +9,8 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="wrapper">
-        <div className={'candles'}>
+      <div className='wrapper'>
+        <div className="candles">
           <div className="light__wave"></div>
           <div className="candle1">
             <div className="candle1__body">
@@ -54,7 +54,6 @@ const Footer = () => {
         <p className="email">Email: ryccwong@email.com</p>
       </div>
       <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-
     </footer>
   );
 };

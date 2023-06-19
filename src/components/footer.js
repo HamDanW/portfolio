@@ -7,6 +7,10 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
 
+  const pauseAnimation= ()=> {
+    
+  }
+
   return (
     <footer>
       <div className='wrapper'>

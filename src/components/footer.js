@@ -45,7 +45,7 @@ const Footer = () => {
           <div className="candle__smoke-two"></div>
         </div>
         <div className="floor"></div>
-        <button className='' onClick={pauseAnimation}>Toggle</button>
+        <button className='Dark-Mode-Button' onClick={pauseAnimation}>Toggle</button>
       </div>
       <div className="social-icons">
         <a href="http://Linkedin.com/in/ryan-c-wong" target="_blank" rel="noopener noreferrer" className="icon linkedin">

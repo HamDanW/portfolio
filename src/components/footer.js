@@ -6,13 +6,17 @@ import "./dark-mode-styling.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
-
+  document.body.classList.add("paused");
   const [darkMode, toggleDarkMode] = useState(false);
 
-  var dark = true;
+  var paused = true;
 
   function pauseAnimation(){
-    document.body.classList.add("paused")
+    if (paused == true){
+      document.body.classList.remove("paused");
+    }else{
+      document.body.classList.add("paused");
+    }
   }
 
   return (

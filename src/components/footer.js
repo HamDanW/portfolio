@@ -9,8 +9,10 @@ const Footer = () => {
 
   const [darkMode, toggleDarkMode] = useState(false);
 
+  var dark = true;
+
   function pauseAnimation(){
-    toggleDarkMode(darkMode => !darkMode);
+    document.body.classList.add("paused")
   }
 
   return (

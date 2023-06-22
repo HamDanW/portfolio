@@ -4,7 +4,6 @@ import "./footer-styling.css"
 import "./dark-mode-styling.css"
 //import "./dark-mode-test.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "bootstrap/dist/css/bootstrap.min.css"
 
 const Footer = () => {
   const [darkMode, toggleDarkMode] = useState(false);

@@ -10,13 +10,14 @@ const Footer = () => {
 
   let paused = Boolean(false);
 
-  function pauseAnimation(){
+  function toggleAnimation(){
     if (paused){
       document.body.classList.remove("paused");
+      paused = Boolean(false)
     }else{
       document.body.classList.add("paused");
+      Boolean(true)
     }
-    pause = !pause;
   }
 
   return (
@@ -51,7 +52,7 @@ const Footer = () => {
           <div className="candle__smoke-two"></div>
         </div>
         <div className="floor"></div>
-        <button className='Dark-Mode-Button' onClick={pauseAnimation}>Toggle</button>
+        <button className='Dark-Mode-Button' onClick={toggleAnimation}>Toggle</button>
       </div>
       <div className="social-icons">
         <a href="http://Linkedin.com/in/ryan-c-wong" target="_blank" rel="noopener noreferrer" className="icon linkedin">

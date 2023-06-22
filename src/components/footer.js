@@ -16,6 +16,7 @@ const Footer = () => {
     }else{
       document.body.classList.add("paused");
     }
+    pause = !pause;
   }
 
   return (

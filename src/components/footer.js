@@ -13,10 +13,10 @@ const Footer = () => {
   function toggleAnimation(){
     if (paused){
       document.body.classList.remove("paused");
-      paused = Boolean(false)
+      paused = !paused;
     }else{
       document.body.classList.add("paused");
-      Boolean(true)
+      paused = !paused;
     }
   }
 

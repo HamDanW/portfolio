@@ -7,11 +7,9 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css"
 
 const Footer = () => {
-  React.useEffect(() => {
-    if (collapse === null && typeof document !== "undefined") {
-      document.body.classList.remove("paused");
-    }
-  });
+  if (typeof document !== 'undefined'){
+    document.body.classList.remove("paused");
+  }
   const [darkMode, toggleDarkMode] = useState(false);
 
   var paused = true;

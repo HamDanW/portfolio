@@ -8,10 +8,10 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const Footer = () => {
   const [darkMode, toggleDarkMode] = useState(false);
 
-  var paused = true;
+  let paused = Boolean(false);
 
   function pauseAnimation(){
-    if (paused == true){
+    if (paused){
       document.body.classList.remove("paused");
     }else{
       document.body.classList.add("paused");

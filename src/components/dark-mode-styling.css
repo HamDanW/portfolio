@@ -1,5 +1,8 @@
 body {
   background-color: #FFF;
+}
+
+.body-animate {
   animation: change-background 3s infinite linear;
 }
 

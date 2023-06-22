@@ -8,11 +8,17 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const Footer = () => {
   const [darkMode, toggleDarkMode] = useState(false);
 
-  let paused = Boolean(false);
+  let paused = Boolean(true);
+  let init = Boolean(true);
 
   function toggleAnimation(){
     if (paused){
-      document.body.classList.remove("paused");
+      if(init = true){
+        init != init;
+        document.body.classList.add("body-animate");
+      }else{
+        document.body.classList.remove("paused");
+      }
       paused = !paused;
     }else{
       document.body.classList.add("paused");

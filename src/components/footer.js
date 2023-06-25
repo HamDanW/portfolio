@@ -6,23 +6,38 @@ import "./dark-mode-styling.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
-  const [darkMode, toggleDarkMode] = useState(false);
+  let white = Boolean(true);
 
-  let paused = Boolean(true);
-  let init = Boolean(true);
 
-  function toggleAnimation(){
-    if (paused){
-      if(init = true){
+  function toggleAnimation() {
+    var centisecond = 0;
+    var totalTime = 300;
+
+    let init = Boolean(true);
+    setInterval(() => {
+      ++centisecond;
+    }, 10);
+    console.log(centisecond);
+
+    if (white) {
+      //turn dark mode
+      var playtime = 235
+      if (init = true) {
         init != init;
         document.body.classList.add("body-animate");
-      }else{
+      } else {
         document.body.classList.remove("paused");
       }
-      paused = !paused;
-    }else{
-      document.body.classList.add("paused");
-      paused = !paused;
+      if (centisecond>=playtime){
+        document.body.classList.add("paused");
+      }
+    } else {
+      //turn light mode
+      var playtime = 65;
+      document.body.classList.remove("paused");
+      if (centisecond>=playtime){
+        document.body.classList.add("paused");
+      }
     }
   }
 

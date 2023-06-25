@@ -7,17 +7,14 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
   let white = Boolean(true);
-
-
+  var centisecond = 0;
+  let init = Boolean(true);
+  setInterval(() => {
+    ++centisecond;
+  }, 10);
+  console.log(centisecond);
   function toggleAnimation() {
-    var centisecond = 0;
-    var totalTime = 300;
-
-    let init = Boolean(true);
-    setInterval(() => {
-      ++centisecond;
-    }, 10);
-    console.log(centisecond);
+    centisecond=0;
 
     if (white) {
       //turn dark mode
@@ -28,14 +25,14 @@ const Footer = () => {
       } else {
         document.body.classList.remove("paused");
       }
-      if (centisecond>=playtime){
+      if (centisecond >= playtime) {
         document.body.classList.add("paused");
       }
     } else {
       //turn light mode
       var playtime = 65;
       document.body.classList.remove("paused");
-      if (centisecond>=playtime){
+      if (centisecond >= playtime) {
         document.body.classList.add("paused");
       }
     }

@@ -9,10 +9,13 @@ const Footer = () => {
   let white = Boolean(true);
   var centisecond = 0;
   let init = Boolean(true);
+  
   setInterval(() => {
     ++centisecond;
   }, 10);
   console.log(centisecond);
+
+
   function toggleAnimation() {
     centisecond=0;
 

@@ -7,36 +7,35 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
   let white = Boolean(true);
-  var centisecond = 0;
   let init = Boolean(true);
-  
-  setInterval(() => {
-    ++centisecond;
-  }, 10);
-  console.log(centisecond);
-
 
   function toggleAnimation() {
-    centisecond=0;
-
-    if (white) {
-      //turn dark mode
-      var playtime = 235
-      if (init = true) {
-        init != init;
-        document.body.classList.add("body-animate");
+    var centisecond = 0;
+    setInterval(() => {
+      ++centisecond;
+    }, 10);
+    console.log(centisecond);
+ 
+    while(centisecond < 300){  
+      if (white) {
+        //turn dark mode
+        var playtime = 235
+        if (init = true) {
+          init != init;
+          document.body.classList.add("body-animate");
+        } else {
+          document.body.classList.remove("paused");
+        }
+        if (centisecond >= playtime) {
+          document.body.classList.add("paused");
+        }
       } else {
+        //turn light mode
+        var playtime = 65;
         document.body.classList.remove("paused");
-      }
-      if (centisecond >= playtime) {
-        document.body.classList.add("paused");
-      }
-    } else {
-      //turn light mode
-      var playtime = 65;
-      document.body.classList.remove("paused");
-      if (centisecond >= playtime) {
-        document.body.classList.add("paused");
+        if (centisecond >= playtime) {
+          document.body.classList.add("paused");
+        }
       }
     }
   }

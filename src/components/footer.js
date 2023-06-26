@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "gatsby"
 import "./footer-styling.css"
 import "./dark-mode-styling.css"
@@ -9,11 +9,18 @@ const Footer = () => {
   let white = Boolean(true);
   let init = Boolean(true);
 
+  const [centiseconds, setCentiseconds] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCentiseconds((prevCentiseconds) => prevCentiseconds + 1);
+    }, 10);
+
+    return () => clearInterval(timer);
+  }, []);
+
   function toggleAnimation() {
     var centisecond = 0;
-    setInterval(() => {
-      ++centisecond;
-    }, 10);
     console.log(centisecond);
  
     while(centisecond < 300){  
@@ -38,6 +45,10 @@ const Footer = () => {
         }
       }
     }
+  }
+
+  function pauseAnimation(){
+    
   }
 
   return (

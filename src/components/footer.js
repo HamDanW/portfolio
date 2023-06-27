@@ -20,6 +20,8 @@ const Footer = () => {
       return () => clearInterval(timer);
     }, []);
 
+    console.log(centisecond);
+
     if (white) {
       //turn dark mode
       var playtime = 235

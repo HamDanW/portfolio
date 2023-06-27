@@ -22,33 +22,31 @@ const Footer = () => {
   function toggleAnimation() {
     var centisecond = 0;
     console.log(centisecond);
- 
-    while(centisecond < 300){  
-      if (white) {
-        //turn dark mode
-        var playtime = 235
-        if (init = true) {
-          init != init;
-          document.body.classList.add("body-animate");
-        } else {
-          document.body.classList.remove("paused");
-        }
-        if (centisecond >= playtime) {
-          document.body.classList.add("paused");
-        }
+
+    if (white) {
+      //turn dark mode
+      var playtime = 235
+      if (init = true) {
+        init != init;
+        document.body.classList.add("body-animate");
       } else {
-        //turn light mode
-        var playtime = 65;
         document.body.classList.remove("paused");
-        if (centisecond >= playtime) {
-          document.body.classList.add("paused");
-        }
+      }
+      if (centisecond >= playtime) {
+        document.body.classList.add("paused");
+      }
+    } else {
+      //turn light mode
+      var playtime = 65;
+      document.body.classList.remove("paused");
+      if (centisecond >= playtime) {
+        document.body.classList.add("paused");
       }
     }
   }
 
-  function pauseAnimation(){
-    
+  function pauseAnimation() {
+
   }
 
   return (

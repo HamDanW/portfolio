@@ -9,19 +9,16 @@ const Footer = () => {
   let white = Boolean(true);
   let init = Boolean(true);
 
-  const [centiseconds, setCentiseconds] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCentiseconds((prevCentiseconds) => prevCentiseconds + 1);
-    }, 10);
-
-    return () => clearInterval(timer);
-  }, []);
-
   function toggleAnimation() {
-    var centisecond = 0;
-    console.log(centisecond);
+    const [centisecond, setCentisecond] = useState(0);
+
+    useEffect(() => {
+      const timer = setInterval(() => {
+        setCentisecond((prevCentisecond) => prevCentisecond + 1);
+      }, 10);
+
+      return () => clearInterval(timer);
+    }, []);
 
     if (white) {
       //turn dark mode

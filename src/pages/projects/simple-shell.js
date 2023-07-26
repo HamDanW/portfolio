@@ -1,31 +1,16 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import marked from "marked"
+import ReactMarkdown from "react-markdown";
 
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
+import mdContent from "./simple-shell.md"
 
 const SimpleShell = () => {
-  const [markdownContent, setMarkdownContent] = React.useState("");
-
-  React.useEffect(() => {
-    // Fetch the markdown file
-    fetch("simple-shell.md")
-      .then((response) => response.text())
-      .then((data) => {
-        // Convert the markdown content to HTML using marked
-        const htmlContent = marked(data);
-        setMarkdownContent(htmlContent);
-      })
-      .catch((error) => {
-        console.error("Error fetching or converting markdown:", error);
-      });
-  }, []);
-
   return (
     <Layout>
       {/* Display the converted markdown content as HTML */}
-      <div dangerouslySetInnerHTML={{ __html: markdownContent }} />
+      <ReactMarkdown children={mdContent} />
 
       <Link to="/">Go back to the homepage</Link>
     </Layout>

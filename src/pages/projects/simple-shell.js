@@ -1,18 +1,36 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import marked from "marked"
 
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 
-const SimpleShell = () => (
-  <Layout>
-    <h1>Simple Shell</h1>
-    <hr/>
-    <h2>Introduction </h2>
-    <p>A shell is a command-line interface, also known as a CLI. Once a command is entered, the shell interprets it and communicates with the operating system to execute the requested actions. It acts as an intermediary between the user and the operating system, facilitating the execution of various tasks and managing system resources. </p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+const SimpleShell = () => {
+  const [markdownContent, setMarkdownContent] = React.useState("");
+
+  React.useEffect(() => {
+    // Fetch the markdown file
+    fetch("simple-shell.md")
+      .then((response) => response.text())
+      .then((data) => {
+        // Convert the markdown content to HTML using marked
+        const htmlContent = marked(data);
+        setMarkdownContent(htmlContent);
+      })
+      .catch((error) => {
+        console.error("Error fetching or converting markdown:", error);
+      });
+  }, []);
+
+  return (
+    <Layout>
+      {/* Display the converted markdown content as HTML */}
+      <div dangerouslySetInnerHTML={{ __html: markdownContent }} />
+
+      <Link to="/">Go back to the homepage</Link>
+    </Layout>
+  );
+};
 
 export const Head = () => <Seo title="Simple-Shell" />
 

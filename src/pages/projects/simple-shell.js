@@ -10,7 +10,6 @@ export default function BlogPostTemplate({
     <div>
       <div>
         <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
         <div
           dangerouslySetInnerHTML={{ __html: html }}
         />

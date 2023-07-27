@@ -6,7 +6,7 @@ import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 
 const SimpleShell = () => {
-  const file_name= './simple-shell.md';
+  const file_name= 'simple-shell.md';
   const [post, setPost] = useState('');
 
   useEffect(()=>{

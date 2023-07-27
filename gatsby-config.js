@@ -8,6 +8,14 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.md$/,
+        use: 'raw-loader'
+      }
+    ]
+  },
   siteMetadata: {
     title: `Ryan's Portfolio`,
     description: `Come check out my website where I feature my projects while learning React`,

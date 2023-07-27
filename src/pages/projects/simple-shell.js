@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown"
 
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import mdContent from "./simple-shell.md"
+import mdContent from "simple-shell.md"
 
 const SimpleShell = () => {
   return (

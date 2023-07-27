@@ -22,6 +22,8 @@ export default function BlogPostTemplate({
   )
 }
 
+export const Head = () => <Seo title="Simple Shell" />
+
 export const pageQuery = graphql`
   query {
     markdownRemark(id: { eq: "31f9b35d-c316-54ad-95b1-124c233a9954" }) {

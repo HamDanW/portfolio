@@ -24,6 +24,8 @@ const SimpleShell = () => {
     fetchMdContent();
   }, []);
 
+  console.log("Markdown Content:", mdContent);
+
   return (
     <Layout>
       {/* Display the converted markdown content as HTML */}

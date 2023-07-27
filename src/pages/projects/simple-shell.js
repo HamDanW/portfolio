@@ -10,7 +10,7 @@ const SimpleShell = () => {
   const [post, setPost] = useState('');
 
   useEffect(()=>{
-    import(`./projects/${file_name}`)
+    import(`./${file_name}`)
       .then(res => console.log(res))
       .catch(err => console.log(err))
   });

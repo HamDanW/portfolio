@@ -1,6 +1,5 @@
 ---
 title: Simple Shell
-slug: Simple-Shell
 ---
 
 # ECS150: Project #1 - Simple Shell

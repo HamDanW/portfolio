@@ -20,10 +20,10 @@ export default function BlogPostTemplate({
 
 export const pageQuery = graphql`
   query($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(id: { eq: simple-shell.md }) {
       html
       frontmatter {
-        title
+        Project #1 - Simple Shell
       }
     }
   }

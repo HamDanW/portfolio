@@ -23,7 +23,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: simple-shell.md }) {
       html
       frontmatter {
-        Project #1 - Simple Shell
+        title
       }
     }
   }

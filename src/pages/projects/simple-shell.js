@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown"
 
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
+import mdPath from "./simple-shell.md"
 
 const SimpleShell = () => {
   const [mdContent, setMdContent] = useState("");
@@ -11,7 +12,7 @@ const SimpleShell = () => {
   useEffect(() => {
     const fetchMdContent = async () => {
       try {
-        const response = await fetch("simple-shell.md");
+        const response = await fetch(mdPath);
         if (!response.ok) {
           throw new Error("Failed to fetch markdown content.");
         }

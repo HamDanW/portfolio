@@ -8,14 +8,6 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.md$/,
-        use: 'raw-loader'
-      }
-    ]
-  },
   siteMetadata: {
     title: `Ryan's Portfolio`,
     description: `Come check out my website where I feature my projects while learning React`,
@@ -23,6 +15,21 @@ module.exports = {
     siteUrl: `https://rwong.gatsbyjs.io`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
     "gatsby-plugin-dark-mode",
     `gatsby-plugin-image`,
     {

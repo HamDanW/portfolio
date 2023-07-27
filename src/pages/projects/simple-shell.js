@@ -1,30 +1,33 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "gatsby";
-import MarkDown from 'markdown-to-jsx';
+import * as React from "react"
+import { graphql } from "gatsby"
 
-import Layout from "../../components/layout";
-import Seo from "../../components/seo";
-
-const SimpleShell = () => {
-  const file_name= 'simple-shell.md';
-  const [post, setPost] = useState('');
-
-  useEffect(()=>{
-    import(`./${file_name}`)
-      .then(res => console.log(res))
-      .catch(err => console.log(err))
-  });
-
+export default function BlogPostTemplate({
+  data, // this prop will be injected by the GraphQL query below.
+}) {
+  const { markdownRemark } = data // data.markdownRemark holds your post data
+  const { frontmatter, html } = markdownRemark
   return (
-    <Layout>
-      <MarkDown>
-        {post}
-      </MarkDown>
-      <Link to="/">Go back to the homepage</Link>
-    </Layout>
-  );
-};
+    <div>
+      <div>
+        <h1>{frontmatter.title}</h1>
+        <h2>{frontmatter.date}</h2>
+        <div
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+      </div>
+    </div>
+  )
+}
 
-export const Head = () => <Seo title="Simple-Shell" />
-
-export default SimpleShell
+export const pageQuery = graphql`
+  query($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        slug
+        title
+      }
+    }
+  }
+`

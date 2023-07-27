@@ -15,13 +15,6 @@ module.exports = {
     siteUrl: `https://rwong.gatsbyjs.io`,
   },
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `${__dirname}/src/content`,
-      },
-    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,

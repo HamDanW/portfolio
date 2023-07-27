@@ -1,37 +1,25 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "gatsby"
-import ReactMarkdown from "react-markdown"
+import { Link } from "gatsby";
+import MarkDown from 'markdown-to-jsx';
 
-import Layout from "../../components/layout"
-import Seo from "../../components/seo"
-import mdPath from "./simple-shell.md"
+import Layout from "../../components/layout";
+import Seo from "../../components/seo";
 
 const SimpleShell = () => {
-  const [mdContent, setMdContent] = useState("");
+  const file_name= './simple-shell.md';
+  const [post, setPost] = useState('');
 
-  useEffect(() => {
-    const fetchMdContent = async () => {
-      try {
-        const response = await fetch(mdPath);
-        if (!response.ok) {
-          throw new Error("Failed to fetch markdown content.");
-        }
-        const text = await response.text();
-        setMdContent(text);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchMdContent();
-  }, []);
-
-  console.log("Markdown Content:", mdContent);
+  useEffect(()=>{
+    import(`./projects/${file_name}`)
+      .then(res => console.log(res))
+      .catch(err => console.log(err))
+  });
 
   return (
     <Layout>
-      {/* Display the converted markdown content as HTML */}
-      <ReactMarkdown children={mdContent} />
-
+      <MarkDown>
+        {post}
+      </MarkDown>
       <Link to="/">Go back to the homepage</Link>
     </Layout>
   );

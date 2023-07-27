@@ -7,6 +7,15 @@ export default function BlogPostTemplate({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
+  if (!markdownRemark) {
+    return (
+      <Layout>
+        <div>
+          <h1>Post Not Found</h1>
+        </div>
+      </Layout>
+    )
+  }
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>

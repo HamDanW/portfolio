@@ -11,7 +11,7 @@ const SimpleShell = () => {
   useEffect(() => {
     const fetchMdContent = async () => {
       try {
-        const response = await fetch("./simple-shell.md");
+        const response = await fetch("simple-shell.md");
         if (!response.ok) {
           throw new Error("Failed to fetch markdown content.");
         }

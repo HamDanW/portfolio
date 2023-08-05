@@ -18,7 +18,7 @@ const links = [
     text: "About Me",
     url: "about-me",
     description:
-      "A lil sumting about me",
+      "A little something about me",
   },
   {
     text: "My Playground",
@@ -50,7 +50,7 @@ const IndexPage = () => (
       </h1>
       <p className={styles.intro}>
         {/* <b>Example pages:</b>{" "} */}
-          Hello, my name is Ryan Wong. I am a recent undergraduate from UC Davis with a BS in computer science. Although this site is 
+          Hello, my name is Ryan Wong. I am a software engineer that graduated from UC Davis. Although this site is 
           still in progress, I am able to learn and showcase my skills using React and Node. Have a good day!
         {/* {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
